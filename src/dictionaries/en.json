@@ -1,0 +1,259 @@
+
+{
+  "appName": "AccesoIT",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "plans": "Plans",
+    "advisor": "AI Advisor",
+    "contact": "Contact",
+    "admin": "Admin",
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "adminDashboard": "Admin Panel",
+    "clientDashboard": "My Account"
+  },
+  "hero": {
+    "title": "Boost Your Business with IT Solutions & AI Automation",
+    "subtitle": "Innovative IT solutions and automation from AccesoIT to optimize your processes and drive growth.",
+    "cta": "Get Started",
+    "whatsapp_cta": "Chat on WhatsApp"
+  },
+  "services": {
+    "title": "Our Services",
+    "automation": {
+      "title": "Process Automation",
+      "description": "Streamline your workflows with intelligent automation."
+    },
+    "bots": {
+      "title": "AI Bots",
+      "description": "Custom AI bots for customer service, sales, and more."
+    },
+    "infrastructure": {
+      "title": "Cloud Infrastructure",
+      "description": "Scalable and reliable cloud solutions for your applications."
+    },
+    "webApps": {
+      "title": "Web & App Development",
+      "description": "Modern and responsive websites and applications."
+    }
+  },
+  "plans": {
+    "title": "Bot Plans",
+    "monthlyLabel": "Monthly",
+    "annualLabel": "Annual (Save 15%)",
+    "basic": {
+      "name": "Basic Bot",
+      "priceMonthly": "$49",
+      "priceSuffixMonthly": "/mo",
+      "priceAnnual": "$499",
+      "priceSuffixAnnual": "/yr",
+      "features": ["1 AI Bot", "Basic Support", "Limited Integrations"]
+    },
+    "pro": {
+      "name": "Pro Bot",
+      "priceMonthly": "$99",
+      "priceSuffixMonthly": "/mo",
+      "priceAnnual": "$999",
+      "priceSuffixAnnual": "/yr",
+      "features": ["3 AI Bots", "Priority Support", "Advanced Integrations"],
+      "popular": true
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "priceMonthly": "Custom",
+      "priceSuffixMonthly": "",
+      "priceAnnual": "Custom",
+      "priceSuffixAnnual": "",
+      "features": ["Unlimited Bots", "Dedicated Support", "Full Customization"]
+    },
+    "selectPlan": "Select Plan"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "success": "Message sent successfully! We'll be in touch soon.",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "advisor": {
+    "title": "AI Automation Advisor",
+    "description": "Describe your business needs, and our AI will recommend the best automation solutions and bot plans for you.",
+    "inputLabel": "Business Requirements & Goals",
+    "inputPlaceholder": "e.g., Automate customer support on our e-commerce site, reduce response times, and handle frequently asked questions.",
+    "submit": "Get Recommendation",
+    "recommendationTitle": "Our Recommendation",
+    "reasoningTitle": "Reasoning",
+    "loading": "Generating recommendations...",
+    "error": "Could not get recommendations. Please ensure your GOOGLE_API_KEY environment variable is set correctly in your .env.local file (or server environment) and has permissions for 'Generative Language API'. Check server logs for more details."
+  },
+  "footer": {
+    "contactInfo": "Contact Info",
+    "socialMedia": "Social Media",
+    "legalLinks": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "rightsReserved": "All rights reserved.",
+    "tagline": "Innovative IT Solutions and Automation.",
+    "adminLink": "Admin Panel"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "chatWidget": {
+    "tooltip": "Chat with AccesoBot",
+    "chatPopup": {
+      "title": "Chat with AccesoBot",
+      "inputPlaceholder": "Type your message...",
+      "sendButton": "Send",
+      "typing": "AccesoBot is typing...",
+      "errorMessage": "Sorry, something went wrong. Please try again.",
+      "greeting": "Hello! I'm AccesoBot. How can I help you today with AccesoIT services? You can ask me about our products, prices, or schedule a demo."
+    }
+  },
+  "admin": {
+    "products": {
+      "title": "Product Management",
+      "description": "Add, edit, or remove products that AccesoBot can provide information about. Product data is stored in Firestore.",
+      "listTitle": "Current Products",
+      "firebaseErrorTitle": "Firebase Configuration Error",
+      "firebaseErrorDescription": "Product management is currently unavailable because Firebase is not configured correctly. Please check the server console for more details and ensure your Firebase Project ID and other configurations are set up in your environment variables (.env.local or Firebase Studio settings).",
+      "fetchErrorTitle": "Error Fetching Products",
+      "fetchErrorDescription": "Could not load products from the database. Please try again later."
+    },
+    "productForm": {
+      "titleCreate": "Add New Product",
+      "titleEdit": "Edit Product",
+      "nameLabel": "Product Name",
+      "namePlaceholder": "e.g., Basic Bot Plan",
+      "priceLabel": "Price",
+      "pricePlaceholder": "e.g., $49/mo or Custom",
+      "descriptionLabel": "Description (optional)",
+      "descriptionPlaceholder": "e.g., Includes 1 AI Bot, basic support...",
+      "submitCreate": "Add Product",
+      "submitUpdate": "Update Product",
+      "successCreate": "Product added successfully!",
+      "successUpdate": "Product updated successfully!",
+      "error": "An error occurred. Please try again.",
+      "processing": "Processing...",
+      "disabledTooltip": "Product management is currently disabled due to a configuration issue. Please check server logs."
+    },
+    "productList": {
+      "nameHeader": "Name",
+      "priceHeader": "Price",
+      "descriptionHeader": "Description",
+      "actionsHeader": "Actions",
+      "editButton": "Edit",
+      "deleteButton": "Delete",
+      "confirmDeleteTitle": "Confirm Delete",
+      "confirmDeleteMessage": "Are you sure you want to delete the product \"{productName}\"?",
+      "cancelButton": "Cancel",
+      "confirmButton": "Confirm",
+      "deleteSuccess": "Product deleted successfully.",
+      "deleteError": "Failed to delete product.",
+      "noProducts": "No products found. Add a new product to get started.",
+      "disabledTooltip": "Product list is unavailable due to configuration issues."
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "description": "Manage your AccesoIT application settings and content. Remember to set environment variables for primary configuration.",
+      "logoutButton": "Logout",
+      "productManagement": {
+        "title": "Product Management (Firestore)",
+        "description": "View, add, edit, and delete products. Data is stored in Firebase Firestore.",
+        "link": "Go to Products"
+      },
+      "adminCredentials": {
+        "title": "Admin Account (Firebase Auth)",
+        "description": "Admin user is managed via Firebase Authentication. To change password or email, use the Firebase console.",
+        "infoText": "Admin user credentials (email/password) are managed in Firebase Authentication. You can change the admin's password or email directly in the Firebase console under Authentication > Users."
+      },
+      "firestoreTest": {
+        "title": "Firestore Connection Test",
+        "description": "Verify if the application can connect to and read from your Firestore database. Requires NEXT_PUBLIC_FIREBASE_... variables to be correctly set and Firestore API enabled in your Google Cloud Project.",
+        "testButton": "Test Connection",
+        "testingButton": "Testing...",
+        "successTitle": "Firestore Test Successful",
+        "errorTitle": "Firestore Test Failed",
+        "disabledText": "Firebase not initialized, connection test disabled. Check environment variables."
+      }
+    }
+  },
+  "login": {
+    "title": "Login",
+    "description": "Access your AccesoIT account. Use Firebase credentials.",
+    "form": {
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "adminEmailPlaceholder": "e.g., admin@accesoit.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Your password",
+      "submitButton": "Login",
+      "loginSuccess": "Login successful! Redirecting...",
+      "adminLoginSuccess": "Admin login successful! Redirecting to dashboard...",
+      "clientLoginSuccess": "Login successful! Redirecting to your dashboard...",
+      "loginError": "Invalid credentials. Please try again.",
+      "processing": "Processing...",
+      "firebaseNotReadyError": "Firebase is not ready. Please check your connection or try again later."
+    }
+  },
+  "client": {
+    "dashboard": {
+      "title": "Client Dashboard",
+      "description": "View your subscription and account details.",
+      "logoutButton": "Logout",
+      "subscriptionDetails": {
+        "title": "My Subscription",
+        "productLabel": "Active Product/Service",
+        "nextPaymentLabel": "Next Payment Due",
+        "paymentDetailsLabel": "Payment Method",
+        "expiryDateLabel": "Subscription Expires On"
+      }
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "description": "Complete your purchase by providing your details and selecting a payment method.",
+    "planSelectedTitle": "Plan Selected",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "paymentMethodLabel": "Select Payment Method",
+      "mercadoPagoLabel": "MercadoPago (Simulated)",
+      "cardLabel": "Credit/Debit Card (Simulated)",
+      "bankTransferLabel": "Bank Transfer",
+      "submitButton": "Proceed to Payment (Simulated)",
+      "processingPayment": "Processing Payment...",
+      "paymentSuccessTitle": "Payment Successful (Simulated)",
+      "paymentSuccessMessage": "Your subscription has been activated. You will be redirected shortly.",
+      "paymentPendingTitle": "Payment Pending Verification",
+      "paymentPendingMessage": "We have received your transfer details. Your subscription will be activated once payment is confirmed (1-2 business days).",
+      "paymentErrorTitle": "Payment Failed (Simulated)",
+      "paymentErrorMessage": "There was an issue with your payment. Please try again or select a different method.",
+      "selectPaymentMethodError": "Please select a payment method."
+    },
+    "paymentInstructions": {
+      "bankTransferTitle": "Bank Transfer Instructions",
+      "bankTransferAlias": "Alias: accesoit",
+      "bankTransferCBU": "CBU/CVU: 0000003100012345678901 (Example)",
+      "bankTransferSteps": [
+        "Transfer the amount for your selected plan to the provided alias or CBU/CVU.",
+        "Once the transfer is complete, click the button below to notify us.",
+        "We will verify your payment within 1-2 business days. You'll receive an email once your subscription is active."
+      ],
+      "confirmTransferButton": "I Have Made the Transfer"
+    }
+  }
+}

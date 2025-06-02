@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 220 40% 97%; /* Very light cool gray, almost white */
+    --foreground: 220 30% 15%; /* Dark grayish blue for text */
+    
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 30% 15%; /* Dark grayish blue */
+    
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 30% 15%;
+    
+    --primary: 220 60% 35%;  /* Darker blue for text "AccesoIT" & main interactive elements */
+    --primary-foreground: 0 0% 100%; /* White for good contrast */
+    
+    --secondary: 220 25% 90%; /* Lighter cool gray for secondary elements */
+    --secondary-foreground: 220 30% 25%; /* Darker text for secondary elements */
+    
+    --muted: 220 20% 88%; /* Muted gray */
+    --muted-foreground: 220 15% 50%; /* Muted text color */
+    
+    --accent: 230 70% 60%; /* Brighter, slightly purplish blue from logo gradient for highlights */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 25% 85%; /* Border color */
+    --input: 220 25% 85%; /* Input border */
+    --ring: 225 70% 55%;   /* Ring color based on a vibrant blue from logo gradient */
+    
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, can remain as is or be adjusted if sidebar is used later */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 225 70% 55%; /* Using a vibrant blue for dark mode primary, consistent with light accent */
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 235 75% 65%; /* Brighter purplish blue for dark mode accent */
+    --accent-foreground: 0 0% 98%; /* Ensure good contrast on accent */
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 225 70% 55%; /* Match primary blue */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Sidebar specific colors for dark mode */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 225 70% 55%; /* Match primary */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 225 70% 55%; /* Match ring/primary */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply min-h-screen flex flex-col;
+  }
+  main {
+    @apply flex-grow;
+  }
+}

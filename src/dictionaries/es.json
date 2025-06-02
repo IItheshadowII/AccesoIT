@@ -1,0 +1,259 @@
+
+{
+  "appName": "AccesoIT",
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "plans": "Planes",
+    "advisor": "Asesor IA",
+    "contact": "Contacto",
+    "admin": "Admin",
+    "login": "Iniciar Sesión",
+    "dashboard": "Panel",
+    "logout": "Cerrar Sesión",
+    "adminDashboard": "Panel Admin",
+    "clientDashboard": "Mi Cuenta"
+  },
+  "hero": {
+    "title": "Impulsa Tu Negocio con Soluciones TI y Automatización IA",
+    "subtitle": "Soluciones TI innovadoras y automatización de AccesoIT para optimizar tus procesos e impulsar el crecimiento.",
+    "cta": "Comenzar",
+    "whatsapp_cta": "Chatea por WhatsApp"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "automation": {
+      "title": "Automatización de Procesos",
+      "description": "Optimiza tus flujos de trabajo con automatización inteligente."
+    },
+    "bots": {
+      "title": "Bots IA",
+      "description": "Bots IA personalizados para servicio al cliente, ventas y más."
+    },
+    "infrastructure": {
+      "title": "Infraestructura Cloud",
+      "description": "Soluciones cloud escalables y confiables para tus aplicaciones."
+    },
+    "webApps": {
+      "title": "Desarrollo Web y Apps",
+      "description": "Sitios web y aplicaciones modernas y responsivas."
+    }
+  },
+  "plans": {
+    "title": "Planes de Bots",
+    "monthlyLabel": "Mensual",
+    "annualLabel": "Anual (Ahorra 15%)",
+    "basic": {
+      "name": "Bot Básico",
+      "priceMonthly": "$49",
+      "priceSuffixMonthly": "/mes",
+      "priceAnnual": "$499",
+      "priceSuffixAnnual": "/año",
+      "features": ["1 Bot IA", "Soporte Básico", "Integraciones Limitadas"]
+    },
+    "pro": {
+      "name": "Bot Pro",
+      "priceMonthly": "$99",
+      "priceSuffixMonthly": "/mes",
+      "priceAnnual": "$999",
+      "priceSuffixAnnual": "/año",
+      "features": ["3 Bots IA", "Soporte Prioritario", "Integraciones Avanzadas"],
+      "popular": true
+    },
+    "enterprise": {
+      "name": "Empresarial",
+      "priceMonthly": "Personalizado",
+      "priceSuffixMonthly": "",
+      "priceAnnual": "Personalizado",
+      "priceSuffixAnnual": "",
+      "features": ["Bots Ilimitados", "Soporte Dedicado", "Personalización Completa"]
+    },
+    "selectPlan": "Seleccionar Plan"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu Nombre",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "¿Cómo podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    }
+  },
+  "advisor": {
+    "title": "Asesor de Automatización IA",
+    "description": "Describe las necesidades de tu negocio y nuestra IA te recomendará las mejores soluciones de automatización y planes de bots.",
+    "inputLabel": "Requisitos y Objetivos del Negocio",
+    "inputPlaceholder": "Ej: Automatizar el soporte al cliente en nuestro sitio de e-commerce, reducir tiempos de respuesta y manejar preguntas frecuentes.",
+    "submit": "Obtener Recomendación",
+    "recommendationTitle": "Nuestra Recomendación",
+    "reasoningTitle": "Justificación",
+    "loading": "Generando recomendaciones...",
+    "error": "No se pudieron obtener recomendaciones. Por favor, asegúrate de que tu variable de entorno GOOGLE_API_KEY esté configurada correctamente en tu archivo .env.local (o entorno del servidor) y tenga permisos para 'Generative Language API'. Revisa los logs del servidor para más detalles."
+  },
+  "footer": {
+    "contactInfo": "Información de Contacto",
+    "socialMedia": "Redes Sociales",
+    "legalLinks": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "rightsReserved": "Todos los derechos reservados.",
+    "tagline": "Soluciones TI Innovadoras y Automatización.",
+    "adminLink": "Panel de Admin"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "chatWidget": {
+    "tooltip": "Chatea con AccesoBot",
+    "chatPopup": {
+      "title": "Chatea con AccesoBot",
+      "inputPlaceholder": "Escribe tu mensaje...",
+      "sendButton": "Enviar",
+      "typing": "AccesoBot está escribiendo...",
+      "errorMessage": "Lo siento, algo salió mal. Por favor, inténtalo de nuevo.",
+      "greeting": "¡Hola! Soy AccesoBot. ¿Cómo puedo ayudarte hoy con los servicios de AccesoIT? Puedes preguntarme sobre nuestros productos, precios o agendar una demostración."
+    }
+  },
+  "admin": {
+    "products": {
+      "title": "Gestión de Productos",
+      "description": "Añade, edita o elimina productos sobre los que AccesoBot puede proporcionar información. Los datos de los productos se almacenan en Firestore.",
+      "listTitle": "Productos Actuales",
+      "firebaseErrorTitle": "Error de Configuración de Firebase",
+      "firebaseErrorDescription": "La gestión de productos no está disponible actualmente porque Firebase no está configurado correctamente. Por favor, revisa la consola del servidor para más detalles y asegúrate de que tu ID de Proyecto de Firebase y otras configuraciones estén establecidas en tus variables de entorno (.env.local o configuración de Firebase Studio).",
+      "fetchErrorTitle": "Error al Cargar Productos",
+      "fetchErrorDescription": "No se pudieron cargar los productos desde la base de datos. Por favor, inténtalo más tarde."
+    },
+    "productForm": {
+      "titleCreate": "Añadir Nuevo Producto",
+      "titleEdit": "Editar Producto",
+      "nameLabel": "Nombre del Producto",
+      "namePlaceholder": "Ej: Plan Bot Básico",
+      "priceLabel": "Precio",
+      "pricePlaceholder": "Ej: $49/mes o Personalizado",
+      "descriptionLabel": "Descripción (opcional)",
+      "descriptionPlaceholder": "Ej: Incluye 1 Bot IA, soporte básico...",
+      "submitCreate": "Añadir Producto",
+      "submitUpdate": "Actualizar Producto",
+      "successCreate": "¡Producto añadido con éxito!",
+      "successUpdate": "¡Producto actualizado con éxito!",
+      "error": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+      "processing": "Procesando...",
+      "disabledTooltip": "La gestión de productos está actualmente deshabilitada debido a un problema de configuración. Por favor, revisa los logs del servidor."
+    },
+    "productList": {
+      "nameHeader": "Nombre",
+      "priceHeader": "Precio",
+      "descriptionHeader": "Descripción",
+      "actionsHeader": "Acciones",
+      "editButton": "Editar",
+      "deleteButton": "Eliminar",
+      "confirmDeleteTitle": "Confirmar Eliminación",
+      "confirmDeleteMessage": "¿Estás seguro de que quieres eliminar el producto \"{productName}\"?",
+      "cancelButton": "Cancelar",
+      "confirmButton": "Confirmar",
+      "deleteSuccess": "Producto eliminado con éxito.",
+      "deleteError": "Error al eliminar el producto.",
+      "noProducts": "No se encontraron productos. Añade un nuevo producto para comenzar.",
+      "disabledTooltip": "La lista de productos no está disponible debido a problemas de configuración."
+    },
+    "dashboard": {
+      "title": "Panel de Administración",
+      "description": "Gestiona la configuración y el contenido de tu aplicación AccesoIT. Recuerda configurar las variables de entorno para la configuración principal.",
+      "logoutButton": "Cerrar Sesión",
+      "productManagement": {
+        "title": "Gestión de Productos (Firestore)",
+        "description": "Ver, añadir, editar y eliminar productos. Los datos se almacenan en Firebase Firestore.",
+        "link": "Ir a Productos"
+      },
+      "adminCredentials": {
+        "title": "Cuenta de Administrador (Firebase Auth)",
+        "description": "El usuario administrador se gestiona mediante Firebase Authentication. Para cambiar la contraseña o el correo electrónico, utiliza la consola de Firebase.",
+        "infoText": "Las credenciales del usuario administrador (email/contraseña) se gestionan en Firebase Authentication. Puedes cambiar la contraseña o el email del administrador directamente en la consola de Firebase en Authentication > Users."
+      },
+      "firestoreTest": {
+        "title": "Prueba de Conexión Firestore",
+        "description": "Verifica si la aplicación puede conectarse y leer desde tu base de datos Firestore. Requiere que las variables NEXT_PUBLIC_FIREBASE_... estén configuradas correctamente y la API de Firestore habilitada en tu Proyecto de Google Cloud.",
+        "testButton": "Probar Conexión",
+        "testingButton": "Probando...",
+        "successTitle": "Prueba de Firestore Exitosa",
+        "errorTitle": "Prueba de Firestore Fallida",
+        "disabledText": "Firebase no inicializado, prueba de conexión deshabilitada. Revisa las variables de entorno."
+      }
+    }
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "description": "Accede a tu cuenta de AccesoIT. Usa credenciales de Firebase.",
+    "form": {
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "adminEmailPlaceholder": "ej: admin@accesoit.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Tu contraseña",
+      "submitButton": "Iniciar Sesión",
+      "loginSuccess": "¡Inicio de sesión exitoso! Redirigiendo...",
+      "adminLoginSuccess": "¡Inicio de sesión de administrador exitoso! Redirigiendo al panel...",
+      "clientLoginSuccess": "¡Inicio de sesión exitoso! Redirigiendo a tu panel...",
+      "loginError": "Credenciales inválidas. Por favor, inténtalo de nuevo.",
+      "processing": "Procesando...",
+      "firebaseNotReadyError": "Firebase no está listo. Por favor, revisa tu conexión o inténtalo más tarde."
+    }
+  },
+  "client": {
+    "dashboard": {
+      "title": "Panel de Cliente",
+      "description": "Consulta los detalles de tu suscripción y cuenta.",
+      "logoutButton": "Cerrar Sesión",
+      "subscriptionDetails": {
+        "title": "Mi Suscripción",
+        "productLabel": "Producto/Servicio Activo",
+        "nextPaymentLabel": "Próximo Pago",
+        "paymentDetailsLabel": "Método de Pago",
+        "expiryDateLabel": "La Suscripción Vence el"
+      }
+    }
+  },
+  "checkout": {
+    "title": "Finalizar Compra",
+    "description": "Completa tu compra proporcionando tus datos y seleccionando un método de pago.",
+    "planSelectedTitle": "Plan Seleccionado",
+    "form": {
+      "nameLabel": "Nombre Completo",
+      "namePlaceholder": "Ingresa tu nombre completo",
+      "emailLabel": "Dirección de Correo Electrónico",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "paymentMethodLabel": "Selecciona Método de Pago",
+      "mercadoPagoLabel": "MercadoPago (Simulado)",
+      "cardLabel": "Tarjeta de Crédito/Débito (Simulado)",
+      "bankTransferLabel": "Transferencia Bancaria",
+      "submitButton": "Proceder al Pago (Simulado)",
+      "processingPayment": "Procesando Pago...",
+      "paymentSuccessTitle": "Pago Exitoso (Simulado)",
+      "paymentSuccessMessage": "Tu suscripción ha sido activada. Serás redirigido en breve.",
+      "paymentPendingTitle": "Pago Pendiente de Verificación",
+      "paymentPendingMessage": "Hemos recibido los detalles de tu transferencia. Tu suscripción se activará una vez que se confirme el pago (1-2 días hábiles).",
+      "paymentErrorTitle": "Pago Fallido (Simulado)",
+      "paymentErrorMessage": "Hubo un problema con tu pago. Por favor, inténtalo de nuevo o selecciona un método diferente.",
+      "selectPaymentMethodError": "Por favor, selecciona un método de pago."
+    },
+    "paymentInstructions": {
+      "bankTransferTitle": "Instrucciones para Transferencia Bancaria",
+      "bankTransferAlias": "Alias: accesoit",
+      "bankTransferCBU": "CBU/CVU: 0000003100012345678901 (Ejemplo)",
+      "bankTransferSteps": [
+        "Transfiere el monto de tu plan seleccionado al alias o CBU/CVU proporcionado.",
+        "Una vez completada la transferencia, haz clic en el botón de abajo para notificarnos.",
+        "Verificaremos tu pago dentro de 1-2 días hábiles. Recibirás un correo electrónico una vez que tu suscripción esté activa."
+      ],
+      "confirmTransferButton": "He Realizado la Transferencia"
+    }
+  }
+}

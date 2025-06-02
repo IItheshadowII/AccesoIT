@@ -1,0 +1,37 @@
+
+{
+  "extends": "./tsconfig.json", // Inherit common settings
+  "compilerOptions": {
+    "module": "commonjs", // Express/Node typically use CommonJS
+    "outDir": "./dist/server", // Output directory for compiled server JS files
+    "rootDir": "./src/server", // Only compile files from src/server
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": false, // We want to emit JS files for the server
+    "isolatedModules": false, // Not strictly necessary for server as Next.js plugin isn't used
+    "baseUrl": "./", // Ensure paths are resolved correctly
+    "paths": {
+      "@/*": ["src/*"] // Keep alias for imports like '@/ai/flows/...'
+    }
+    // Remove Next.js specific plugins if they cause issues for server build
+    // "plugins": [] 
+  },
+  "include": [
+    "src/server/**/*.ts", // Files to include for server compilation
+    "src/ai/**/*.ts" // Include AI flows as they are imported by server handlers
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/app", // Exclude Next.js frontend app code
+    "src/components",
+    "src/hooks",
+    "src/lib", // Exclude client-side libs if they are not needed by server
+                // or if they cause conflicts. firebase.ts (client) vs firebaseAdmin.ts (server)
+    "src/dictionaries",
+    "src/middleware.ts" // Next.js middleware
+  ]
+}

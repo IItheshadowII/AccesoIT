@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccesoIT - Automatización de Pymes con Bots Inteligentes & Cloud</title>
+    <meta name="description" content="Soluciones de automatización para pymes, bots inteligentes y servicios cloud a medida">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header con Logo y Navegación -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>AccesoIT</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#demo" class="btn-demo">Demo</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="title">Automatiza tu Pyme con Bots Inteligentes & Cloud a Medida</h2>
+                <p class="subtitle">Soluciones tecnológicas que optimizan tus procesos y aumentan la productividad</p>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn btn-primary">Agendar Demo</a>
+                    <a href="#servicios" class="btn btn-secondary">Conoce Nuestros Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumen de Automatizaciones -->
+    <section id="servicios" class="section automatizaciones">
+        <div class="container">
+            <h2 class="section-title">Automatizaciones para tu Negocio</h2>
+            <div class="section-content">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Workflows Automatizados</h3>
+                    <p>Integra tus aplicaciones y automatiza tareas repetitivas para liberar el tiempo de tu equipo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>n8n Workflows</h3>
+                    <p>Crea flujos de trabajo potentes sin código usando nuestra plataforma visual n8n.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Integraciones API</h3>
+                    <p>Conecta tus sistemas existentes mediante APIs para un flujo de información sin interrupciones.</p>
+                </div>
+            </div>
+            <div class="screenshot-gallery">
+                <img src="https://via.placeholder.com/350x200" alt="Captura de workflow n8n" class="screenshot">
+                <img src="https://via.placeholder.com/350x200" alt="Dashboard de automatizaciones" class="screenshot">
+                <img src="https://via.placeholder.com/350x200" alt="Reporte automatizado" class="screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Bots -->
+    <section id="soluciones" class="section bots">
+        <div class="container">
+            <h2 class="section-title">Nuestros Bots Inteligentes</h2>
+            <div class="section-content">
+                <div class="bot-description">
+                    <div class="bot-info">
+                        <h3><i class="fab fa-whatsapp"></i> WhatsApp Bot</h3>
+                        <ul>
+                            <li>Atención al cliente 24/7</li>
+                            <li>Integración con tu CRM</li>
+                            <li>Respuestas automáticas personalizadas</li>
+                            <li>Gestión de pedidos y consultas</li>
+                        </ul>
+                    </div>
+                    <div class="bot-preview">
+                        <img src="https://via.placeholder.com/300x500" alt="WhatsApp Bot Preview" class="bot-screenshot">
+                    </div>
+                </div>
+                
+                <div class="bot-description reverse">
+                    <div class="bot-info">
+                        <h3><i class="fab fa-telegram"></i> Telegram Bot</h3>
+                        <ul>
+                            <li>Notificaciones automáticas</li>
+                            <li>Comandos personalizados</li>
+                            <li>Consultas a bases de datos</li>
+                            <li>Informes programados</li>
+                        </ul>
+                    </div>
+                    <div class="bot-preview">
+                        <img src="https://via.placeholder.com/300x500" alt="Telegram Bot Preview" class="bot-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts a Medida -->
+    <section class="section scripts">
+        <div class="container">
+            <h2 class="section-title">Scripts a Medida</h2>
+            <div class="scripts-content">
+                <div class="script-example">
+                    <div class="code-header">
+                        <span class="language">Node.js</span>
+                        <span class="description">Sincronización de inventarios</span>
+                    </div>
+                    <pre class="code-block"><code>// Sincronización de inventario entre plataformas
+const syncInventory = async () => {
+  try {
+    const inventory = await fetchFromERP();
+    const updates = processInventoryData(inventory);
+    await updateWebshopInventory(updates);
+    console.log('Inventario sincronizado exitosamente');
+  } catch (error) {
+    console.error('Error en sincronización:', error);
+  }
+}</code></pre>
+                </div>
+                
+                <div class="script-example">
+                    <div class="code-header">
+                        <span class="language">Python</span>
+                        <span class="description">Reporte automatizado de ventas</span>
+                    </div>
+                    <pre class="code-block"><code># Generar reporte diario de ventas
+import pandas as pd
+from datetime import datetime
+
+def generate_sales_report():
+    # Obtener datos de ventas
+    sales_data = get_daily_sales()
+    
+    # Procesar datos y generar reporte
+    df = pd.DataFrame(sales_data)
+    report = df.groupby('categoria').agg({
+        'cantidad': 'sum',
+        'monto': 'sum'
+    })
+    
+    # Guardar y enviar por email
+    filename = f"ventas_{datetime.now().strftime('%Y%m%d')}.xlsx"
+    report.to_excel(filename)
+    send_email_report(filename)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestructura Proxmox -->
+    <section class="section proxmox">
+        <div class="container">
+            <h2 class="section-title">Infraestructura Proxmox</h2>
+            <div class="infra-content">
+                <div class="infra-description">
+                    <p>Implementamos y gestionamos tu infraestructura virtual con Proxmox, ofreciendo alta disponibilidad, seguridad y rendimiento optimizado.</p>
+                    <ul>
+                        <li>Cluster de servidores en alta disponibilidad</li>
+                        <li>Máquinas virtuales aisladas por cliente</li>
+                        <li>Backup automatizado</li>
+                        <li>Monitorización 24/7</li>
+                        <li>Escalabilidad según demanda</li>
+                    </ul>
+                </div>
+                <div class="infra-diagram">
+                    <img src="https://via.placeholder.com/600x400" alt="Diagrama Proxmox" class="diagram-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes y Precios -->
+    <section class="section precios">
+        <div class="container">
+            <h2 class="section-title">Planes y Precios</h2>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Plan Básico</h3>
+                        <div class="price">$299<span>/mes</span></div>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>1 Bot (WhatsApp o Telegram)</li>
+                            <li>5 Workflows de n8n</li>
+                            <li>1 VM en Proxmox (2GB RAM)</li>
+                            <li>Soporte por email</li>
+                            <li>Implementación en 5 días</li>
+                        </ul>
+                    </div>
+                    <div class="plan-cta">
+                        <a href="#demo" class="btn btn-outline">Agendar Demo</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="plan-header">
+                        <h3>Plan Profesional</h3>
+                        <div class="price">$599<span>/mes</span></div>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>2 Bots (WhatsApp y Telegram)</li>
+                            <li>15 Workflows de n8n</li>
+                            <li>2 VMs en Proxmox (4GB RAM c/u)</li>
+                            <li>Soporte 12/5 por Whatsapp</li>
+                            <li>Implementación en 3 días</li>
+                            <li>2 Scripts personalizados</li>
+                        </ul>
+                    </div>
+                    <div class="plan-cta">
+                        <a href="#demo" class="btn btn-primary">Agendar Demo</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Plan Enterprise</h3>
+                        <div class="price">$1,299<span>/mes</span></div>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>Bots ilimitados</li>
+                            <li>Workflows ilimitados</li>
+                            <li>Cluster Proxmox dedicado</li>
+                            <li>Soporte 24/7</li>
+                            <li>Implementación en 24h</li>
+                            <li>Scripts personalizados ilimitados</li>
+                            <li>Asesoría tecnológica mensual</li>
+                        </ul>
+                    </div>
+                    <div class="plan-cta">
+                        <a href="#demo" class="btn btn-outline">Agendar Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendar Demo -->
+    <section id="demo" class="section demo">
+        <div class="container">
+            <h2 class="section-title">Agendar una Demostración</h2>
+            <div class="form-container">
+                <form id="demo-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha y hora preferida</label>
+                        <input type="datetime-local" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                    </div>
+                </form>
+                <div id="form-response" class="form-response"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">AccesoIT</h3>
+                    <p>Soluciones tecnológicas para la automatización de tu negocio.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contacto@accesoit.com</p>
+                        <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#soluciones">Soluciones</a></li>
+                        <li><a href="#demo">Agendar Demo</a></li>
+                        <li><a href="/n8n/">Portal n8n</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AccesoIT. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <button id="whatsapp-button" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        <div id="whatsapp-chat" class="whatsapp-chat">
+            <div class="chat-header">
+                <div class="chat-profile">
+                    <div class="profile-img">
+                        <img src="https://via.placeholder.com/40" alt="AccesoIT Bot">
+                    </div>
+                    <div class="profile-info">
+                        <h4>AccesoIT Bot</h4>
+                        <p><span class="status-online"></span> En línea</p>
+                    </div>
+                </div>
+                <button id="close-chat" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot">
+                    <p>👋 ¡Hola! Soy el asistente virtual de AccesoIT. ¿En qué puedo ayudarte hoy?</p>
+                    <span class="time">Ahora</span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+                <button id="send-message" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para mensajes de confirmación -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-message" class="modal-message"></div>
+            <div class="modal-footer">
+                <button id="modal-confirm" class="btn btn-primary">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

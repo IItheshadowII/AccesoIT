@@ -1,0 +1,16 @@
+{
+  "products": {
+    "title": "Productos",
+    "add": "Agregar Producto",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirmDelete": "¿Está seguro que desea eliminar este producto?",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar producto...",
+    "name": "Nombre",
+    "description": "Descripción",
+    "price": "Precio",
+    "stock": "Stock",
+    "actions": "Acciones"
+  }
+}

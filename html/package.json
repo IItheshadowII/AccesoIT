@@ -1,0 +1,12 @@
+{
+  "name": "accesoit-web",
+  "version": "1.0.0",
+  "description": "Sitio web de AccesoIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
